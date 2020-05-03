@@ -449,7 +449,6 @@ function keypress_function(event){
 	neg_refuse.play();
 	input.value = "";
 	button.focus();
-	button.select();
 }
 	if(inputlength()>0 && input.value === item[0].item_name && event.which === 13 && input.value !== item[1].code){
 	var li = document.createElement("li");
