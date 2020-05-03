@@ -1,3 +1,4 @@
+let neg_refuse= document.getElementById("neg_refuse");
 let reborn_sound = document.getElementById("reborn");
 const thanos_snap = document.getElementById("thanos_snap");
 const press_fadein = document.getElementById("press_fadein");
@@ -351,11 +352,12 @@ var item = [
 const {pressD, code} = item[4];
 function click_function(){
 	if(inputlength()>0 && input.value !== item[0].item_name && input.value !== item[1].code && input.value !== item[2].enter && input.value !== item[3].code && input.value !== code && input.value !== pressD){
-	press_add.play();
-	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
-	li.setAttribute("class", "li_part animated bounceIn");
-	ol.appendChild(li);
+	// press_add.play();
+	// var li = document.createElement("li");
+	// li.appendChild(document.createTextNode(input.value));
+	// li.setAttribute("class", "li_part animated bounceIn");
+	// ol.appendChild(li);
+	neg_refuse.play();
 	input.value = "";
 	// input.focus();
 	// input.select();
@@ -437,9 +439,10 @@ function kami_kami(){
 function keypress_function(event){
 	if(inputlength()>0 && event.which === 13 && input.value !== item[0].item_name && input.value !== item[1].code && input.value !== item[2].enter && input.value !== item[3].code && input.value !== code && input.value !== pressD){
 	var li = document.createElement("li");
-	li.setAttribute("class", "li_part animated bounceIn");
-	li.appendChild(document.createTextNode(input.value));
-	ol.appendChild(li);
+	// li.setAttribute("class", "li_part animated bounceIn");
+	// li.appendChild(document.createTextNode(input.value));
+	// ol.appendChild(li);
+	neg_refuse.play();
 	input.value = "";
 	button.focus();
 	button.select();
