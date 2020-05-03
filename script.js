@@ -1,3 +1,4 @@
+const wow = document.getElementById("wow");
 let neg_refuse= document.getElementById("neg_refuse");
 let reborn_sound = document.getElementById("reborn");
 const thanos_snap = document.getElementById("thanos_snap");
@@ -75,6 +76,9 @@ welcome.innerHTML = `Welcome, ${yname}!`;
 }
 else{
 	welcome.innerHTML = "Welcome to Movie shop!"
+}
+const woo = () => {
+	wow.play();
 }
 const back_body = () => {
 		press_fadein.play();
