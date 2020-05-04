@@ -5,7 +5,9 @@
 .head_img{
   transition: 6s;
 }
-
+.linkk{
+  text-decoration: none;
+}
 .headtxt{
   background : -webkit-linear-gradient(red,yellow);
   -webkit-background-clip : text;
