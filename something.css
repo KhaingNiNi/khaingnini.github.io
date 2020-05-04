@@ -1,0 +1,64 @@
+#head_ul{
+	list-style-type: none;
+}
+.np{
+	text-decoration: none;
+	color : white;
+	padding : 5px;
+	border : 1px solid white;
+	/*background: linear-gradient(right,red,purple);*/
+	font-size : 18px;
+	transition: 0.4s;
+	border-radius : 2px;
+}
+.np:hover{
+	padding : 9px;
+}
+body{
+	margin : 0;
+	padding : 0;
+}
+.head_lia{
+	text-decoration: none;
+	float: right;
+	padding : 20px;
+	display: block;
+	transition : 1s;
+	color: blue;
+	font-size : 18px;
+	font-weight : bold;
+}
+/*#head_part{
+	color: blue;
+	font-size : 20px;
+}*/
+.main_text{
+	font-size : 30px;
+	background : -webkit-linear-gradient(right, blue, green);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	font-family: 'Montserrat Subrayada', sans-serif;
+
+}
+.head_lia:hover{
+	background : -webkit-linear-gradient(right, red, yellow);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+}
+#bgbg{
+	background-image: url("bgbg.jpg");
+	background-size : cover;
+	background-position: center;
+	height : 100vh;
+
+}
+.main{
+	position: absolute;
+	top: 100px;
+	bottom : 0;
+	left : 2vw;
+	right : 0;
+	display : flex;
+	justify-content: center;
+	align-items: center;
+}
