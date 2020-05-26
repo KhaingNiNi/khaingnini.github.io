@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<meta name="google-site-verification" content="JHgoF_zdePjgf_XnlyXa5ZiZX7Iss_I4XdFvjG5i6ys" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>...</title>
 	<link rel="stylesheet" type="text/css" href="something.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
+	<style>
+		#btn{
+			width: 255px;
+		}
+		#nameselect{
+			width : 200px;
+		}
+		#jobselect{
+			width : 215px;
+		}
+	</style>
 </head>
 <body id="bgbg">
 
@@ -19,15 +31,45 @@
 </div>
 	<div class="main">
 		<div>
-		<h1 class="main_text">PHOTOGRAPHY</h1><br>
-		<a class="np" href="#"><span class="lit">Learn more</span></a><br><br><br>
-		<a class="np" href="#"><span class="lit">Contact</span></a>
+		<h1 id="onlyone">နှစ်ခုလောက်မေးချင်လို့ပါ။</h1>
+Name : <select id="nameselect">
+<option value=" အိုးးးးး နာမည်မပြောဘူးပဲ မအေလိုး။"></option>
+<option value="မြင့်ကိုကိုဦး">MKKO</option>
+<option value = "ကောင်းစည်သူ">KST</option>
+<option value="စိုးဝင်းထွန်း">SWT</option>
+<option value="other" >Other</option>
+</select><br><br>
+Job : <select id="jobselect">
+<option value="သူတောင်းစား တောင်းစားရမယ့်အကောင်"></option>
+<option value="လူတော်လူကောင်းလေးပဲ">Computer</option>
+<option value = "ဂိမ်မာ စောက်လုပ်စောက်ကိုင်မရှိတဲ့ကောင်">MLBB</option>
+<option value="မုဒိမ်းကောင်ပဲ">GTC</option>
+</select><br><br>
+<input type="button" onclick="allgo()" value="OK" id="btn">
 	</div>
 	</div>
 
 
 
+<script>
+const name = document.getElementsByTagName("select")[0];
+const job = document.getElementsByTagName("select")[1];
+const allgo = () =>{
+	if(name.value !== "other"){
+	alert(`မင်းနာမည်က ${name.value}ပဲ။ ပီးတော့ မင်းက ${job.value}။`);
+}
+else{
+	let namu = prompt("ဒါဆိုမင်းနာမည်က ဘယ်သူတုန်း");
+	if(namu === "" || namu === null){
+		alert("နာမည်မပြောတဲ့ခွေးသား");
+	}
+	else{
+	alert(`အော် မင်းနာမည်က ${namu}ကိုး။ ပီးတော့ မင်းက ${job.value}။`);
+}
+}
+}
 
+</script>
 	<script type="text/javascript" src="something.js"></script>
 </body>
 </html>
