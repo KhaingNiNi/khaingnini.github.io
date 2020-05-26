@@ -5,17 +5,80 @@
 	<meta name="google-site-verification" content="JHgoF_zdePjgf_XnlyXa5ZiZX7Iss_I4XdFvjG5i6ys" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>...</title>
-	<link rel="stylesheet" type="text/css" href="something.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada&display=swap" rel="stylesheet">
 	<style>
+		#head_ul{
+	list-style-type: none;
+}
+.np{
+	text-decoration: none;
+	color : white;
+	padding : 5px;
+	border : 1px solid white;
+	/*background: linear-gradient(right,red,purple);*/
+	font-size : 18px;
+	transition: 0.4s;
+	border-radius : 2px;
+}
+.np:hover{
+	padding : 9px;
+}
+body{
+	margin : 0;
+	padding : 0;
+}
+.head_lia{
+	text-decoration: none;
+	float: right;
+	padding : 20px;
+	display: block;
+	transition : 1s;
+	color: blue;
+	font-size : 18px;
+	font-weight : bold;
+}
+/*#head_part{
+	color: blue;
+	font-size : 20px;
+}*/
+.main_text{
+	font-size : 30px;
+	background : -webkit-linear-gradient(right, blue, green);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+	font-family: 'Montserrat Subrayada', sans-serif;
+
+}
+.head_lia:hover{
+	background : -webkit-linear-gradient(right, red, yellow);
+	-webkit-background-clip : text;
+	-webkit-text-fill-color : transparent;
+}
+#bgbg{
+	background-image: url("bgbg.jpg");
+	background-size : cover;
+	background-position: center;
+	height : 100vh;
+
+}
+.main{
+	position: absolute;
+	top: 100px;
+	bottom : 0;
+	left : 2vw;
+	right : 0;
+	display : flex;
+	justify-content: center;
+	align-items: center;
+}
 		#btn{
-			width: 255px;
+			width: 260px;
 		}
 		#nameselect{
-			width : 200px;
+			width : 150px;
 		}
 		#jobselect{
-			width : 215px;
+			width : 150px;
 		}
 		#onlyone{
 			color : white;	
@@ -38,19 +101,26 @@
 	<div class="main">
 		<div>
 		<h1 id="onlyone">နှစ်ခုလောက်မေးချင်လို့ပါ။</h1>
-			<span class="labo">နာမည် :</span> <select id="nameselect">
+		<table>
+			<tr>
+			<td><span class="labo">နာမည် :</span></td>
+			<td> <select id="nameselect">
 <option value=" အိုးးးးး နာမည်မပြောဘူးပဲ မအေလိုး။"></option>
 <option value="မြင့်ကိုကိုဦး">MKKO</option>
 <option value = "ကောင်းစည်သူ">KST</option>
 <option value="စိုးဝင်းထွန်း">SWT</option>
 <option value="other" >Other</option>
-</select><br><br>
-			<span class="labo">အလုပ်အကိုင် :</span> <select id="jobselect">
+</select></td></tr><br><br>
+			<tr><td><span class="labo">အလုပ်အကိုင် :</span></td>
+			<td> <select id="jobselect">
 <option value="သူတောင်းစား တောင်းစားရမယ့်အကောင်"></option>
 <option value="လူတော်လူကောင်းလေးပဲ">Computer</option>
 <option value = "ဂိမ်မာ စောက်လုပ်စောက်ကိုင်မရှိတဲ့ကောင်">MLBB</option>
 <option value="မုဒိမ်းကောင်ပဲ">GTC</option>
-</select><br><br>
+</select></td>
+</tr>
+</table>
+<br>
 <input type="button" onclick="allgo()" value="OK" id="btn">
 	</div>
 	</div>
