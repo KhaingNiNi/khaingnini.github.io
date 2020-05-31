@@ -69,7 +69,6 @@ const checkValid = () =>{
 	}
 }
 const shineach = () =>{
-	reseteach.style.transition = "1s";
 	reseteach.style.width = "50px";
 	reseteach.style.height = "50px";
 	setTimeout(function(){
@@ -106,7 +105,6 @@ reseteach.addEventListener("click",shineach);
 
 const clickone = () =>{
 	clickadd.play();
-	one.style.transition = "1s";
 	one.style.width = "50px";
 	one.style.height = "50px";
 	setTimeout(function(){
@@ -142,7 +140,6 @@ one.addEventListener("click",clickone);
 
 const clicktwo = () =>{
 	clickadd.play();
-	two.style.transition = "1s";
 	two.style.width = "50px";
 	two.style.height = "50px";
 	setTimeout(function(){
@@ -178,7 +175,6 @@ two.addEventListener("click",clicktwo);
 
 const clickthree = () =>{
 	clickadd.play();
-	three.style.transition = "1s";
 	three.style.width = "50px";
 	three.style.height = "50px";
 	setTimeout(function(){
@@ -214,7 +210,6 @@ three.addEventListener("click",clickthree);
 
 const clickfour = () =>{
 	clickadd.play();
-	four.style.transition = "1s";
 	four.style.width = "50px";
 	four.style.height = "50px";
 	setTimeout(function(){
@@ -250,7 +245,6 @@ four.addEventListener("click",clickfour);
 
 const clickfive = () =>{
 	clickadd.play();
-	five.style.transition = "1s";
 	five.style.width = "50px";
 	five.style.height = "50px";
 	setTimeout(function(){
@@ -286,7 +280,6 @@ five.addEventListener("click",clickfive);
 
 const clicksix = () =>{
 	clickadd.play();
-	six.style.transition = "1s";
 	six.style.width = "50px";
 	six.style.height = "50px";
 	setTimeout(function(){
@@ -322,8 +315,7 @@ six.addEventListener("click",clicksix);
 
 const clickseven = () =>{
 	clickadd.play();
-	seven.style.transition = "1s";
-	seven.style.width = "50px";
+        seven.style.width = "50px";
 	seven.style.height = "50px";
 	setTimeout(function(){
 	seven.style.width = "70px";
@@ -358,7 +350,6 @@ seven.addEventListener("click",clickseven);
 
 const clickeight = () =>{
 	clickadd.play();
-	eight.style.transition = "1s";
 	eight.style.width = "50px";
 	eight.style.height = "50px";
 	setTimeout(function(){
@@ -394,7 +385,6 @@ eight.addEventListener("click",clickeight);
 
 const clicknine = () =>{
 	clickadd.play();
-	nine.style.transition = "1s";
 	nine.style.width = "50px";
 	nine.style.height = "50px";
 	setTimeout(function(){
@@ -430,7 +420,6 @@ nine.addEventListener("click",clicknine);
 
 const clickzero = () =>{
 	clickadd.play();
-	zero.style.transition = "1s";
 	zero.style.width = "50px";
 	zero.style.height = "50px";
 	setTimeout(function(){
@@ -478,7 +467,6 @@ function shin(){
 	secondnum.style.borderRadius = "15px";
 	thirdnum.style.borderRadius = "15px";
 	fourthnum.style.borderRadius = "15px";
-	reset1.style.transition = "1s";
 	reset1.style.width = "50px";
 	reset1.style.height = "50px";
 	setTimeout(function(){
@@ -501,7 +489,6 @@ function shin(){
 	fourthnum.style.border = "3px solid gold";
 }
 function QnAage(){
-	agebtn.style.transition = "1s";
 	agebtn.style.width = "50px";
 	agebtn.style.height = "50px";
 	setTimeout(function(){
