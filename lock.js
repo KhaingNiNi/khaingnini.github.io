@@ -518,9 +518,9 @@ function QnAage(){
 	agebtn.style.width = "70px";
 	agebtn.style.height = "70px";
 	},150);
-	if(firstnum.value === "9" && secondnum.value === "5" && thirdnum.value === "9" && fourthnum.value === "9"){
+	if(firstnum.value === "1" && secondnum.value === "6" && thirdnum.value === "8" && fourthnum.value === "9"){
 		mastergyi.style.display = "none";
-		song.loop = "true";
+		// song.loop = "true";
 		song.play();
 		qage.style.display = "none";
 		QnA.style.transition = "2s";
