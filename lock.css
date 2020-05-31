@@ -9,31 +9,52 @@
   border-radius : 12px;
   font-weight: bold;
 }
+#lockcolor{
+  padding: 7px;
+  background-color: red;
+  color : white;
+  border-radius : 25px;
+}
+#locklabel{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right : 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+
+}
+#mast{
+  color : black;
+  font-family: 'Marck Script', cursive;
+}
 #text1{
-	background-color: pink;
-	padding : 40px;
-	border-radius: 25px;
+  background-color: pink;
+  padding : 20px;
+  border-radius: 25px;
 }
 .bordertext1{
-	background-image : linear-gradient(to right, skyblue, navy);
-	padding-right : 14px;
-	padding-left : 14px;
-	border-radius: 25px;
+  background-image : linear-gradient(to right, skyblue, navy);
+  padding-right : 14px;
+  padding-left : 14px;
+  border-radius: 25px;
 }
 #message{
-	position: absolute;
-  	top: 0;
-  	bottom : 0;
-  	right : 0;
-  	left : 0;
-  	display: flex;
-  	justify-content: center;
-  	align-items: center;
-	font-size : 13px;
-	font-weight: bold;
-	visibility: hidden;
-	opacity: 0;
-/*	transition: 4s;*/
+  position: absolute;
+    top: 0;
+    bottom : 0;
+    right : 0;
+    left : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  font-size : 13px;
+  font-weight: bold;
+/*  transition: 4s;*/
 }
 #firstnum, #secondnum,
 #thirdnum, #fourthnum
@@ -44,7 +65,7 @@
   text-align: center;
   border-radius: 15px;
   border : 3px solid gold;
-  transition: 0.4s;
+  transition: 1s;
 }
 #agebtn{
   width: 80px;
@@ -55,14 +76,31 @@
   font-size : 20px;
   font-weight: bold;
 }
+/*#firstnum, #secondnum,
+#thirdnum, #fourthnum {
+  font-size : 23px;
+  text-align: center;
+  border-radius: 15px;
+  border-color : gold;
+}*/
+#selectname{
+  height : 30px;
+}
+#rangenum{
+  font-weight: bold;
+  font-size : 23px;
+}
 #qcolor{
   /*background-color: rgb(0,174,233);*/
-  background-color: lightgreen;
+  background-color: green;
   padding : 40px;
   border-radius: 25px;
   color : white;
+  opacity: 1;
+  visibility: visible;
 }
 #qage{
+  display:block;
   position: absolute;
   top: 0;
   bottom : 0;
@@ -71,11 +109,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  transition: 1s;
+  z-index: 1;
 }
-#qage{
-	z-index: 1;
+#about{
+  position: absolute;
+  top: 0;
+  bottom : 0;
+  right : 0;
+  left : 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #headinglabel{
   transition: 1s;
@@ -84,6 +128,32 @@
   font-family: 'Orbitron', sans-serif;
   color : black;
 }
+#main{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom : 0;
+  right : 0;
+  left : 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#mainbtn{
+  width : 50px;
+  height : 40px;
+  border-radius: 50px;
+  background : -webkit-linear-gradient(skyblue,yellow);
+  font-size : 25px;
+  font-family: 'Anton', sans-serif;
+}
+#comain{
+  background-color : skyblue;
+  padding : 20px;
+  border-radius : 25px;
+}
 body{
   /*background-image : url("bgbg.jpg");
   background-size: auto;
@@ -91,6 +161,8 @@ body{
   background-position: center;*/
   background-color: gold;
 }
+
+
 
 
 

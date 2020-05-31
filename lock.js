@@ -29,8 +29,8 @@ const reseteach = document.getElementById("reseteach");
 const reset1 = document.getElementById("reset1");
 const qcolor = document.getElementById("qcolor");
 const headinglabel = document.getElementById("headinglabel");
-const message = document.getElementById("message");
-
+const locklabel = document.getElementById("locklabel");
+var countergyi = 0;
 const checkValid = () =>{
 	if(firstnum.value === ""  && secondnum.value === "" && thirdnum.value === "" && fourthnum.value === ""){
 		headinglabel.style.color = "red";
@@ -69,6 +69,7 @@ const checkValid = () =>{
 	}
 }
 const shineach = () =>{
+	reseteach.style.transition = "1s";
 	reseteach.style.width = "50px";
 	reseteach.style.height = "50px";
 	setTimeout(function(){
@@ -105,6 +106,7 @@ reseteach.addEventListener("click",shineach);
 
 const clickone = () =>{
 	clickadd.play();
+	one.style.transition = "1s";
 	one.style.width = "50px";
 	one.style.height = "50px";
 	setTimeout(function(){
@@ -140,6 +142,7 @@ one.addEventListener("click",clickone);
 
 const clicktwo = () =>{
 	clickadd.play();
+	two.style.transition = "1s";
 	two.style.width = "50px";
 	two.style.height = "50px";
 	setTimeout(function(){
@@ -175,6 +178,7 @@ two.addEventListener("click",clicktwo);
 
 const clickthree = () =>{
 	clickadd.play();
+	three.style.transition = "1s";
 	three.style.width = "50px";
 	three.style.height = "50px";
 	setTimeout(function(){
@@ -210,6 +214,7 @@ three.addEventListener("click",clickthree);
 
 const clickfour = () =>{
 	clickadd.play();
+	four.style.transition = "1s";
 	four.style.width = "50px";
 	four.style.height = "50px";
 	setTimeout(function(){
@@ -245,6 +250,7 @@ four.addEventListener("click",clickfour);
 
 const clickfive = () =>{
 	clickadd.play();
+	five.style.transition = "1s";
 	five.style.width = "50px";
 	five.style.height = "50px";
 	setTimeout(function(){
@@ -280,6 +286,7 @@ five.addEventListener("click",clickfive);
 
 const clicksix = () =>{
 	clickadd.play();
+	six.style.transition = "1s";
 	six.style.width = "50px";
 	six.style.height = "50px";
 	setTimeout(function(){
@@ -315,7 +322,8 @@ six.addEventListener("click",clicksix);
 
 const clickseven = () =>{
 	clickadd.play();
-        seven.style.width = "50px";
+	seven.style.transition = "1s";
+	seven.style.width = "50px";
 	seven.style.height = "50px";
 	setTimeout(function(){
 	seven.style.width = "70px";
@@ -350,6 +358,7 @@ seven.addEventListener("click",clickseven);
 
 const clickeight = () =>{
 	clickadd.play();
+	eight.style.transition = "1s";
 	eight.style.width = "50px";
 	eight.style.height = "50px";
 	setTimeout(function(){
@@ -385,6 +394,7 @@ eight.addEventListener("click",clickeight);
 
 const clicknine = () =>{
 	clickadd.play();
+	nine.style.transition = "1s";
 	nine.style.width = "50px";
 	nine.style.height = "50px";
 	setTimeout(function(){
@@ -420,6 +430,7 @@ nine.addEventListener("click",clicknine);
 
 const clickzero = () =>{
 	clickadd.play();
+	zero.style.transition = "1s";
 	zero.style.width = "50px";
 	zero.style.height = "50px";
 	setTimeout(function(){
@@ -453,6 +464,16 @@ const clickzero = () =>{
 }
 zero.addEventListener("click",clickzero);
 
+
+
+
+
+
+
+
+
+
+
 function shin(){
 	firstnum.style.transform = "rotate(30deg)";
 	secondnum.style.transform = "rotate(30deg)";
@@ -467,6 +488,7 @@ function shin(){
 	secondnum.style.borderRadius = "15px";
 	thirdnum.style.borderRadius = "15px";
 	fourthnum.style.borderRadius = "15px";
+	reset1.style.transition = "1s";
 	reset1.style.width = "50px";
 	reset1.style.height = "50px";
 	setTimeout(function(){
@@ -489,33 +511,43 @@ function shin(){
 	fourthnum.style.border = "3px solid gold";
 }
 function QnAage(){
+	agebtn.style.transition = "1s";
 	agebtn.style.width = "50px";
 	agebtn.style.height = "50px";
 	setTimeout(function(){
 	agebtn.style.width = "70px";
 	agebtn.style.height = "70px";
 	},150);
-	if(firstnum.value === "1" && secondnum.value === "6" && thirdnum.value === "8" && fourthnum.value === "9"){
-		// song.loop = "true";
-		// song.play();
-		// qage.style.display = "none";
-		// QnA.style.transition = "2s";
-		// QnA.style.visibility = "visible";
-		// QnA.style.opacity = "1";
-		qcolor.style.visibility = "hidden";
-		qcolor.style.opacity = "0";
-		qcolor.style.transition = "1s";
-		setTimeout(function(){
-			qage.style.display = "none";
-		},1000);
-		message.style.visibility = "visible";
-		message.style.opacity = "1";
-		message.setAttribute("class","animated delay-1s bounceIn");
-		message.style.userSelect = "none";
-
-		
+	if(firstnum.value === "9" && secondnum.value === "5" && thirdnum.value === "9" && fourthnum.value === "9"){
+		mastergyi.style.display = "none";
+		song.loop = "true";
+		song.play();
+		qage.style.display = "none";
+		QnA.style.transition = "2s";
+		QnA.style.visibility = "visible";
+		QnA.style.opacity = "1";
 	}
+                
 	else{
+				shin();
+                countergyi += 1;
+                if(countergyi === 5){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },10000);
+                }
 		firstnum.style.fontSize = "0px";
 		secondnum.style.fontSize = "0px";
 		thirdnum.style.fontSize = "0px";
@@ -541,10 +573,19 @@ function QnAage(){
 			secondnum.style.borderColor = "gold";
 			thirdnum.style.borderColor = "gold";
 			fourthnum.style.borderColor = "gold";
-		},800);
-		qage.setAttribute("class","animated shake");
+		},600);
+		forerror.setAttribute("class","animated shake");
 		fart.play();
-		setTimeout(function(){qage.setAttribute("class","boobs");},1300);
+		setTimeout(function(){forerror.setAttribute("class","boobs");},1300);
 	}
 }
 agebtn.addEventListener("click",checkValid);
+const warninghey = () =>{
+	alert("\nကူးနေတာလား ချစ်ဆုံးလေးရေ❤️");
+}
+function rehome(){
+	QnA.style.visibility = "visible";
+	QnA.style.opacity = "1";
+	about.style.display = "none";
+	about.style.transition = "1s";
+}
