@@ -614,17 +614,6 @@ function QnAage(){
                 	qage.style.zIndex = "3";
                 },3600000);
                 }
-
-                if(localStorage.clickcount > "12"){
-                locklabel.style.transition = "1s";
-                locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "One year";
-                locklabel.style.opacity = "1";
-                qcolor.style.visibility = "hidden";
-                qcolor.style.transition = "1s";
-                qcolor.style.opacity = "0";
-                locklabel.style.zIndex = "3";
-                }
                 //you can put time line statements from above with "if".
 				
 		firstnum.style.fontSize = "0px";
