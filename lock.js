@@ -31,6 +31,84 @@ const qcolor = document.getElementById("qcolor");
 const headinglabel = document.getElementById("headinglabel");
 const locklabel = document.getElementById("locklabel");
 var countergyi = 0;
+
+if(localStorage.clickcount === "5"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },10000);
+                }
+
+                if(localStorage.clickcount === "10"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "1 minute";
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },60000);
+                }
+
+                if(localStorage.clickcount === "11"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "5 minutes";
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },300000);
+                }
+                if(localStorage.clickcount === "12"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "1 hour";
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },3600000);
+                }
+
+
+
+                
 const checkValid = () =>{
 	if(firstnum.value === ""  && secondnum.value === "" && thirdnum.value === "" && fourthnum.value === ""){
 		headinglabel.style.color = "red";
@@ -656,88 +734,4 @@ function rehome(){
 	QnA.style.opacity = "1";
 	about.style.display = "none";
 	about.style.transition = "1s";
-}
-function comeon(){
-	if(typeof(Storage) !== "undefined"){
-                		if(localStorage.clickcount){
-                			localStorage.clickcount = Number(localStorage.clickcount)+1;
-                		}
-                		else{
-                			localStorage.clickcount = 0;
-                		}
-                	}
-                if(localStorage.clickcount === "5"){
-                locklabel.style.transition = "1s";
-                locklabel.style.visibility = "visible";
-                locklabel.style.opacity = "1";
-                qcolor.style.visibility = "hidden";
-                qcolor.style.transition = "1s";
-                qcolor.style.opacity = "0";
-                locklabel.style.zIndex = "3";
-                return setTimeout(function(){
-                	countergyi = 0;
-                locklabel.style.visibility = "hidden";
-                locklabel.style.opacity = "0";
-                	qcolor.style.visibility = "visible";
-                	qcolor.style.opacity = "1";
-                	qage.style.zIndex = "3";
-                },10000);
-                }
-
-                if(localStorage.clickcount === "10"){
-                locklabel.style.transition = "1s";
-                locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "1 minute";
-                locklabel.style.opacity = "1";
-                qcolor.style.visibility = "hidden";
-                qcolor.style.transition = "1s";
-                qcolor.style.opacity = "0";
-                locklabel.style.zIndex = "3";
-                return setTimeout(function(){
-                	countergyi = 0;
-                locklabel.style.visibility = "hidden";
-                locklabel.style.opacity = "0";
-                	qcolor.style.visibility = "visible";
-                	qcolor.style.opacity = "1";
-                	qage.style.zIndex = "3";
-                },60000);
-                }
-
-                if(localStorage.clickcount === "11"){
-                locklabel.style.transition = "1s";
-                locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "5 minutes";
-                locklabel.style.opacity = "1";
-                qcolor.style.visibility = "hidden";
-                qcolor.style.transition = "1s";
-                qcolor.style.opacity = "0";
-                locklabel.style.zIndex = "3";
-                return setTimeout(function(){
-                	countergyi = 0;
-                locklabel.style.visibility = "hidden";
-                locklabel.style.opacity = "0";
-                	qcolor.style.visibility = "visible";
-                	qcolor.style.opacity = "1";
-                	qage.style.zIndex = "3";
-                },300000);
-                }
-                if(localStorage.clickcount === "12"){
-                locklabel.style.transition = "1s";
-                locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "1 hour";
-                locklabel.style.opacity = "1";
-                qcolor.style.visibility = "hidden";
-                qcolor.style.transition = "1s";
-                qcolor.style.opacity = "0";
-                locklabel.style.zIndex = "3";
-                return setTimeout(function(){
-                	countergyi = 0;
-                locklabel.style.visibility = "hidden";
-                locklabel.style.opacity = "0";
-                	qcolor.style.visibility = "visible";
-                	qcolor.style.opacity = "1";
-                	qage.style.zIndex = "3";
-                },3600000);
-                }
-                //you can put time line statements from above with "if".
 }
