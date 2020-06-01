@@ -32,7 +32,7 @@ const headinglabel = document.getElementById("headinglabel");
 const locklabel = document.getElementById("locklabel");
 const waitlabel = document.getElementById("waitlabel");
 
-function onloadwait(){
+function onloadwaits(){
  if(localStorage.clickcount === "5"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
