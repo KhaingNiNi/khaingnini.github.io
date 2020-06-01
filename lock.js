@@ -562,7 +562,7 @@ function QnAage(){
                 if(localStorage.clickcount === "10"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "1 minute"
+                waitlabel.innerHTML = "1 minute";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
@@ -581,7 +581,7 @@ function QnAage(){
                 if(localStorage.clickcount === "11"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "5 minutes"
+                waitlabel.innerHTML = "5 minutes";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
@@ -599,7 +599,7 @@ function QnAage(){
                 if(localStorage.clickcount === "12"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "1 hour"
+                waitlabel.innerHTML = "1 hour";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
@@ -618,7 +618,7 @@ function QnAage(){
                 if(localStorage.clickcount > "12"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "One year"
+                waitlabel.innerHTML = "One year";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
