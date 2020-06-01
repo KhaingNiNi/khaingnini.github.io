@@ -677,7 +677,6 @@ function comeon(){
                 			localStorage.clickcount = 0;
                 		}
                 	}
-				shin();
                 if(localStorage.clickcount === "5"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
