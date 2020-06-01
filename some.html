@@ -11,11 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="lock.css">
 	<title>...</title>
 </head>
-<body>
+<body onload="onloadwait()">
 	<div id="locklabel">
 		<div id="lockcolor">
 		<h1 align="center">Page has been locked</h1>
-		<h3 align="center">Try again in 10 seconds</h3>
+		<h3 align="center">Try again in <span id="waitlabel">10 seconds</span></h3>
 	</div>
 	</div>
 	<div id="mast">
