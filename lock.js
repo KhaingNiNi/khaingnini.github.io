@@ -687,7 +687,7 @@ function comeon(){
                 if(localStorage.clickcount === "10"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "1 minute"
+                waitlabel.innerHTML = "1 minute";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
@@ -706,7 +706,7 @@ function comeon(){
                 if(localStorage.clickcount === "11"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "5 minutes"
+                waitlabel.innerHTML = "5 minutes";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
@@ -724,7 +724,7 @@ function comeon(){
                 if(localStorage.clickcount === "12"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "1 hour"
+                waitlabel.innerHTML = "1 hour";
                 locklabel.style.opacity = "1";
                 qcolor.style.visibility = "hidden";
                 qcolor.style.transition = "1s";
@@ -738,16 +738,6 @@ function comeon(){
                 	qcolor.style.opacity = "1";
                 	qage.style.zIndex = "3";
                 },3600000);
-                }
-                if(localStorage.clickcount > "12"){
-                locklabel.style.transition = "1s";
-                locklabel.style.visibility = "visible";
-                waitlabel.innerHTML = "One year"
-                locklabel.style.opacity = "1";
-                qcolor.style.visibility = "hidden";
-                qcolor.style.transition = "1s";
-                qcolor.style.opacity = "0";
-                locklabel.style.zIndex = "3";
                 }
                 //you can put time line statements from above with "if".
 }
