@@ -674,7 +674,7 @@ function comeon(){
                 			localStorage.clickcount = Number(localStorage.clickcount)+1;
                 		}
                 		else{
-                			localStorage.clickcount = 1;
+                			localStorage.clickcount = 0;
                 		}
                 	}
 				shin();
