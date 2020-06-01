@@ -519,6 +519,7 @@ function QnAage(){
 	agebtn.style.height = "70px";
 	},150);
 	if(firstnum.value === "1" && secondnum.value === "6" && thirdnum.value === "8" && fourthnum.value === "9"){
+		localStorage.clear();
 		mastergyi.style.display = "none";
 		// song.loop = "true";
 		song.play();
@@ -529,9 +530,18 @@ function QnAage(){
 	}
                 
 	else{
+		if(typeof(Storage) !== "undefined"){
+                		if(localStorage.clickcount){
+                			localStorage.clickcount = Number(localStorage.clickcount)+1;
+                		}
+                		else{
+                			localStorage.clickcount = 1;
+                		}
+                	}
 				shin();
                 countergyi += 1;
-                if(countergyi === 5){
+
+                if(localStorage.clickcount === "5"){
                 locklabel.style.transition = "1s";
                 locklabel.style.visibility = "visible";
                 locklabel.style.opacity = "1";
@@ -548,6 +558,75 @@ function QnAage(){
                 	qage.style.zIndex = "3";
                 },10000);
                 }
+
+                if(localStorage.clickcount === "10"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "1 minute"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },60000);
+                }
+
+                if(localStorage.clickcount === "11"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "5 minutes"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },300000);
+                }
+                if(localStorage.clickcount === "12"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "1 hour"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },3600000);
+                }
+
+                if(localStorage.clickcount > "12"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "One year"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                }
+                //you can put time line statements from above with "if".
+				
 		firstnum.style.fontSize = "0px";
 		secondnum.style.fontSize = "0px";
 		thirdnum.style.fontSize = "0px";
@@ -588,4 +667,99 @@ function rehome(){
 	QnA.style.opacity = "1";
 	about.style.display = "none";
 	about.style.transition = "1s";
+}
+function comeon(){
+	if(typeof(Storage) !== "undefined"){
+                		if(localStorage.clickcount){
+                			localStorage.clickcount = Number(localStorage.clickcount)+1;
+                		}
+                		else{
+                			localStorage.clickcount = 1;
+                		}
+                	}
+				shin();
+                if(localStorage.clickcount === "5"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },10000);
+                }
+
+                if(localStorage.clickcount === "10"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "1 minute"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },60000);
+                }
+
+                if(localStorage.clickcount === "11"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "5 minutes"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },300000);
+                }
+                if(localStorage.clickcount === "12"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "1 hour"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                return setTimeout(function(){
+                	countergyi = 0;
+                locklabel.style.visibility = "hidden";
+                locklabel.style.opacity = "0";
+                	qcolor.style.visibility = "visible";
+                	qcolor.style.opacity = "1";
+                	qage.style.zIndex = "3";
+                },3600000);
+                }
+                if(localStorage.clickcount > "12"){
+                locklabel.style.transition = "1s";
+                locklabel.style.visibility = "visible";
+                waitlabel.innerHTML = "One year"
+                locklabel.style.opacity = "1";
+                qcolor.style.visibility = "hidden";
+                qcolor.style.transition = "1s";
+                qcolor.style.opacity = "0";
+                locklabel.style.zIndex = "3";
+                }
+                //you can put time line statements from above with "if".
 }
